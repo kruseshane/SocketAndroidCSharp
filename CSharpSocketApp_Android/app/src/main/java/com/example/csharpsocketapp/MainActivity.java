@@ -10,7 +10,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Create object which extends AsyncTask
         ConnectionClass connection = new ConnectionClass();
+        
+        // Start the AsyncTask object
         connection.execute();
     }
 }
